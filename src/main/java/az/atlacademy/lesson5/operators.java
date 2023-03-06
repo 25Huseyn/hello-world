@@ -1,0 +1,23 @@
+package az.atlacademy.lesson5;
+
+public class operators {
+    public static void main(String[] args) {
+      int i=5;
+      int b=4;
+      int a;
+
+      a=i+b;
+        System.out.println(a);
+      a=i-b;
+        System.out.println(a);
+      a=i*b;
+        System.out.println(a);
+      a=i%b;
+        System.out.println(a);
+      i++;
+
+        System.out.println(i);
+      i--;
+      System.out.println(i);
+    }
+}
