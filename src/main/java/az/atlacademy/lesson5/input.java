@@ -6,6 +6,6 @@ public class input {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         double num = scan.nextDouble();
-        System.out.println("num: %.5f");
+        System.out.printf(" %.5f", num);
     }
 }
