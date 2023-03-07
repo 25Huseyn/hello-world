@@ -17,7 +17,7 @@ public class operators {
       i++;
 
         System.out.println(i);
-      i--;
+      a = i--;
       System.out.println(i);
     }
 }
