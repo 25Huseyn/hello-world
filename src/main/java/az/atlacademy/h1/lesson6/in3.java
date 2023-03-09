@@ -7,15 +7,15 @@ public class in3 {
 
         Scanner scan = new Scanner(System.in);
         int num = scan.nextInt();
-        if (num % 3==0 &&  num % 5==0) {
+        if (num % 3 == 0 && num % 5 == 0) {
             System.out.println("fizzbuzz");
 
-        } else if (num % 3==0) {
+        } else if (num % 3 == 0) {
             System.out.println("fizz");
-        } else if (num % 5==0) {
+        } else if (num % 5 == 0) {
             System.out.println("buzz");
         } else {
             System.out.println(num);
         }
     }
-    }
+}
