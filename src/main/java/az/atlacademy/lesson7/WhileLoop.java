@@ -7,8 +7,8 @@ public class WhileLoop {
         int num = new Scanner(System.in).nextInt();
         int count = 0;
         while (num > 0) {
-            count++;
             num /= 10;
+            count++;
         }
         System.out.println(count);
     }

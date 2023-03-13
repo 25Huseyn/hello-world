@@ -13,7 +13,7 @@ public class in2 {
         System.out.println(word.length());
         System.out.println(word.toLowerCase());
         System.out.println(word.charAt(0));
-        System.out.println(word.charAt(word.length()-1));
+        System.out.println(word.charAt(word.length() - 1));
 
 
     }

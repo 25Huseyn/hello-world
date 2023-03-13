@@ -9,7 +9,7 @@ public class DigitOperationsApp {
         int sum = 0;
         int prod = 1;
         int count = 0;
-        while (num > 0){
+        while (num > 0) {
             int rem = num % 10;
             num /= 10;
             count++;
@@ -17,8 +17,8 @@ public class DigitOperationsApp {
             prod *= rem;
 
         }
-        System.out.printf("Sum of digits: %d\n",sum );
-        System.out.printf("Prod of digits: %d\n",prod);
-        System.out.printf("Count of digits: %d\n",count);
+        System.out.printf("Sum of digits: %d\n", sum);
+        System.out.printf("Prod of digits: %d\n", prod);
+        System.out.printf("Count of digits: %d\n", count);
     }
 }
