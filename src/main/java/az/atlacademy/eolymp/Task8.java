@@ -1,14 +1,17 @@
-package az.atlacademy.lesson7;
+package az.atlacademy.eolymp;
 
 import java.util.Scanner;
 
-public class Next7 {
+public class Task8 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int a = scan.nextInt();
         int b = scan.nextInt();
-        if (a>=1 && b<=1000){
-            System.out.println(a*b );
+        if (a < b){
+            System.out.println(a +" " + b);
+        }
+        if (b < a){
+            System.out.println(b +" " + a);
         }
     }
 }

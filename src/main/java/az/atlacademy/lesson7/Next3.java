@@ -8,6 +8,6 @@ public class Next3 {
         int n = scan.nextInt();
         int k = scan.nextInt();
 
-        System.out.println(n % k);
+        System.out.println(k % n);
     }
 }
