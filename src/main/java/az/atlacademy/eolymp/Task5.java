@@ -29,7 +29,7 @@ public class Task5 {
                 System.out.println("Summer");
                 break;
             case 8:
-                System.out.println("Spring");
+                System.out.println("Summer");
                 break;
             case 9:
                 System.out.println("Autumn");

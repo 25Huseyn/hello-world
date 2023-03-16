@@ -1,4 +1,4 @@
-package az.atlacademy.h1.lesson6;
+package az.atlacademy.lesson6;
 
 import java.util.Scanner;
 
