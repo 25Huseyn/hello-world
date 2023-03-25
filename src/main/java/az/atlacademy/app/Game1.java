@@ -15,7 +15,7 @@ public class Game1 {
                 System.out.println("Your number is too small. Please, try again..");
             } else if (given > nums) {
                 System.out.println(" Your number is too big. Please, try again..");
-            } else if (given == nums){
+            } else {
                 System.out.println("Congratulations, name!.");
             }
         }
