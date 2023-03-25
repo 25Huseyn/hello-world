@@ -7,8 +7,6 @@ public class TaskM {
         Scanner in = new Scanner(System.in);
         int length = in.nextInt();
         double[] nums = new double[length];
-
-
         for (int i = 0; i < nums.length; i++) {
             nums[i] = in.nextDouble();
         }int index = 0;

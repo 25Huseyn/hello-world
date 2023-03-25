@@ -1,6 +1,5 @@
 package az.atlacademy.eolymparray;
 
-import jdk.dynalink.beans.StaticClass;
 
 import java.util.Scanner;
 
@@ -10,18 +9,20 @@ public class Task4 {
         double x = scan.nextDouble();
         double y = scan.nextDouble();
         double z = scan.nextDouble();
-        double max = min(max(x, y), max(y, z), x + y + z);
-        System.out.printf("%.2f", max);
+        double result = min(max(x, y), max(y, z), x + y + z);
+        System.out.println(result);
 
     }
 
-    public static double min(double x, double y) {
-        return (x < y) ? x : y;
+    public static double max(double x, double z) {
+        return Math.max(x, z);
+    }
+
+    public static double min(double x, double z) {
+        return Math.min(x, z);
     }
 
     public static double min(double x, double y, double z) {
-        return (min(min(x, y), z));
-    }public static double max(double x, double y) {
-        return (x > y) ? x : y;
+        return min(min(x, y), z);
     }
 }

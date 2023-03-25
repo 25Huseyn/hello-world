@@ -1,15 +1,15 @@
-
 package az.atlacademy.mix;
 
 import java.util.Scanner;
 
-public class TaskY {
+public class TasklittleG {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         while (scan.hasNext()) {
-            int a = scan.nextInt();
-            int b = scan.nextInt();
-            System.out.println(a + b);
+            double x = scan.nextDouble();
+            double y = Math.sqrt(x) + 2 * x + Math.sin(x);
+            System.out.printf("%.4f\n", y);
         }
+        scan.close();
     }
 }
