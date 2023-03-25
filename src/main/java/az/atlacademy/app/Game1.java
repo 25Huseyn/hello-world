@@ -10,7 +10,6 @@ public class Game1 {
             int nums = random;
             int given = scan.nextInt();
             System.out.println("Let the game begin!.");
-            System.out.println(nums);
             System.out.println(given);
             if (given < nums) {
                 System.out.println("Your number is too small. Please, try again..");
