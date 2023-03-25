@@ -5,8 +5,8 @@ import java.util.Scanner;
 public class Game1 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
+        int random = (int) (Math.random() * 101);
         while (scan.hasNext()) {
-            int random = (int) (Math.random() * 101);
             int nums = random;
             int given = scan.nextInt();
             System.out.println("Let the game begin!.");
