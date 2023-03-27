@@ -6,6 +6,7 @@ public class Game1 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int random = (int) (Math.random() * 101);
+        String name = scan.next();
         while (scan.hasNext()) {
             int nums = random;
             int given = scan.nextInt();
@@ -16,7 +17,7 @@ public class Game1 {
             } else if (given > nums) {
                 System.out.println(" Your number is too big. Please, try again..");
             } else {
-                System.out.println("Congratulations, name!.");
+                System.out.println("Congratulations, " + name);
             }
         }
     }

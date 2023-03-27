@@ -5,13 +5,13 @@ import java.util.Scanner;
 public class TasklittleV {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        int k = scan.nextInt();
-        int sum=0;
-        int n = 1;
-        for (int i = 1; i <=k; i++) {
-            sum +=i;
-            if (k % sum==0){
-                System.out.println(n);
+        long k = scan.nextLong();
+        long n = 0;
+        for (int i = 1; i < k; i++) {
+            n += i;
+            if (n % k == 0) {
+                System.out.println(i);
+                break;
             }
         }
     }
