@@ -10,14 +10,16 @@ public class TaskM {
         for (int i = 0; i < nums.length; i++) {
             nums[i] = scan.nextDouble();
         }
-        int index;
+        int index = -1;
         for (int i = 0; i < nums.length; i++) {
             if (nums[i] < 2.5) {
                 index = i;
-                System.out.printf(index + " " + " %.2f"  + nums[i]);
-            } else {
-                System.out.println("Not Found");
+                System.out.printf("%d %.2f", index, nums[i]);
+                break;
             }
+        }
+        if (index == -1) {
+            System.out.println("Not Found");
         }
     }
 }

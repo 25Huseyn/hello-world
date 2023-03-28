@@ -7,10 +7,11 @@ public class Game1 {
         Scanner scan = new Scanner(System.in);
         int random = (int) (Math.random() * 101);
         String name = scan.next();
+        System.out.println("Let the game begin!.");
         while (scan.hasNext()) {
             int nums = random;
             int given = scan.nextInt();
-            System.out.println("Let the game begin!.");
+
             System.out.println(given);
             if (given < nums) {
                 System.out.println("Your number is too small. Please, try again..");
