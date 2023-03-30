@@ -7,8 +7,8 @@ public class OppositeSequenceofNumbers {
         Scanner scan = new Scanner(System.in);
         long k = scan.nextLong();
         while (k > 0) {
-            int last = (int) (k % 10);
-            k = k / 10;
+            long last = (long) k % 10;
+            k /= 10;
             System.out.print(last);
         }
     }
