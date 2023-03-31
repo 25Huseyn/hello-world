@@ -2,7 +2,7 @@ package az.atlacademy.app;
 
 import java.util.Scanner;
 
-public class ExamTest1 {
+public class ExamTestA {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         while (scan.hasNext()){
