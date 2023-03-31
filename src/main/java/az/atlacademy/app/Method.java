@@ -9,12 +9,13 @@ public class Method {
         nums(digit);
     }
 
-    public static void nums(int digit) {
+     static int nums(int digit) {
 
         while (digit > 0) {
             int last = digit % 10;
             digit /= 10;
             System.out.print(last + " ");
         }
-    }
+         return digit;
+     }
 }

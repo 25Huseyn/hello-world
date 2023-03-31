@@ -1,7 +1,7 @@
 package az.atlacademy.app;
 
 public class Array3 {
-    public static void mainV1(String[] args) {
+    public static void main(String[] args) {
         int[] nums = new int[5];
         for (int i = 0; i < nums.length; i++) {
             nums[i] = i * i;
@@ -12,7 +12,7 @@ public class Array3 {
         System.out.println();
     }
 
-    public static void main(String[] args) {
+    public static void mainV1(String[] args) {
         int[][] nums = new int[5][5];
         int count = 1;
         for (int row = 0; row < nums.length; row++) {
