@@ -19,7 +19,7 @@ public class Human {
     }
 
     public String toString() {
-        return "Human{name='" + name + "', surname='" + surname + "', year=" + yaer + ", iq=" + iq + ", mother=" + mother + ", father=" + father + ", " + "dog{nickname='" + pet.getNickname() + "', age=" + pet.getAge() + ", tricklevel=" + pet.getTricklevel() + ",habits=[" + pet.getHabits() + "]}";
+        return "Human{name='" + name + "', surname='" + surname + "', year=" + yaer + ", iq=" + iq + ", mother=" + mother + ", father=" + father + ((pet != null) ? (",\npet = " + pet.toString()) : "}");
     }
 
     public String getName() {
