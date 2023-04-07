@@ -22,6 +22,38 @@ public class Human {
         return "Human{name='" + name + "', surname='" + surname + "', year=" + yaer + ", iq=" + iq + ", mother=" + mother + ", father=" + father + ", " + "dog{nickname='" + pet.getNickname() + "', age=" + pet.getAge() + ", tricklevel=" + pet.getTricklevel() + ",habits=[" + pet.getHabits() + "]}";
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public String getSurname() {
+        return surname;
+    }
+
+    public int getYaer() {
+        return yaer;
+    }
+
+    public int getIq() {
+        return iq;
+    }
+
+    public Pet getPet() {
+        return pet;
+    }
+
+    public Human getMother() {
+        return mother;
+    }
+
+    public Human getFather() {
+        return father;
+    }
+
+    public String[][] getSchedule() {
+        return schedule;
+    }
+
     public Human() {
 
     }
