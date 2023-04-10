@@ -10,6 +10,33 @@ public class Human {
     private Human father;
     private String[][] schedule;
 
+    public Human() {
+
+    }
+    public Human(String name, String surname, int yaer) {
+        this.name = name;
+        this.surname = surname;
+        this.yaer = yaer;
+    }
+
+    public Human(String name, String surname, int yaer, Human mother, Human father) {
+        this.name = name;
+        this.surname = surname;
+        this.yaer = yaer;
+        this.mother = mother;
+        this.father = father;
+    }
+
+    public Human(String name, String surname, int yaer, int iq, Pet pet, Human mother, Human father, String[][] schedule) {
+        this.name = name;
+        this.surname = surname;
+        this.yaer = yaer;
+        this.iq = iq;
+        this.pet = pet;
+        this.mother = mother;
+        this.father = father;
+        this.schedule = schedule;
+    }
     public void greetPet() {
         System.out.println("Hello," + pet);
     }
@@ -54,32 +81,6 @@ public class Human {
         return schedule;
     }
 
-    public Human() {
 
-    }
 
-    public Human(String name, String surname, int yaer) {
-        this.name = name;
-        this.surname = surname;
-        this.yaer = yaer;
-    }
-
-    public Human(String name, String surname, int yaer, Human mother, Human father) {
-        this.name = name;
-        this.surname = surname;
-        this.yaer = yaer;
-        this.mother = mother;
-        this.father = father;
-    }
-
-    public Human(String name, String surname, int yaer, int iq, Pet pet, Human mother, Human father, String[][] schedule) {
-        this.name = name;
-        this.surname = surname;
-        this.yaer = yaer;
-        this.iq = iq;
-        this.pet = pet;
-        this.mother = mother;
-        this.father = father;
-        this.schedule = schedule;
-    }
 }
