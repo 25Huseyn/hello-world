@@ -1,16 +1,13 @@
 package az.atlacademy.oop;
 
+import java.util.Arrays;
+
 public class Pet {
     private int age;
-
     private String species;
-
     private String nickname;
-
     private int tricklevel;
-
     private String[] habits;
-
 
     public void eat() {
         System.out.println("I am eating");
@@ -64,11 +61,12 @@ public class Pet {
         this.habits = habits;
     }
 
+    @Override
     public String toString() {
-        return "dog{nickname='" + nickname + "', age=" + age + ", tricklevel=" + tricklevel + ",habits=[" + habits + "]}";
+        return "Pet{age=%d, species='%s', nickname='%s', tricklevel=%d, habits=%s}".formatted(age, species, nickname, tricklevel, Arrays.toString(habits));
     }
 
-    public Pet(int age, String species, String nickname, int tricklevel, String[] habits) {
+    public Pet(int age, AnimalSpecies species, String nickname, int tricklevel, String[] habits) {
         this.age = age;
         this.species = species;
         this.nickname = nickname;
