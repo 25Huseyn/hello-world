@@ -6,18 +6,18 @@ public class App {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         String word = scan.next();
+        String word1 = scan.next();
         int num = 0;
+        int num1 = 0;
            try {
                 num = Integer.parseInt(word);
+               num1 = Integer.parseInt(word1);
            }
            catch (NumberFormatException numberFormatException){
                System.out.println("NumberFormatException");
            }
-            int end = 0;
-        while (num > 0) {
-            end =  num % 10;
-            num /= 10;
-        }
-        System.out.println(end );
+
+        System.out.println(num / num1);
+
     }
 }
