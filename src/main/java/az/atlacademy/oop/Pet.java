@@ -2,7 +2,7 @@ package az.atlacademy.oop;
 
 import java.util.Arrays;
 
-public class Pet {
+public abstract class Pet {
     private int age;
     private String species;
     private String nickname;
@@ -68,7 +68,7 @@ public class Pet {
 
     public Pet(int age, AnimalSpecies species, String nickname, int tricklevel, String[] habits) {
         this.age = age;
-        this.species = species;
+      //  this.species = species;
         this.nickname = nickname;
         this.tricklevel = tricklevel;
         this.habits = habits;
