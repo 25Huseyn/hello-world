@@ -18,6 +18,6 @@ public class App {
             end =  num % 10;
             num /= 10;
         }
-        System.out.println( num );
+        System.out.println(end );
     }
 }
