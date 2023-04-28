@@ -12,13 +12,10 @@ public class App {
            try {
                 num = Integer.parseInt(word);
                num1 = Integer.parseInt(word1);
+               System.out.println(num / num1);
            }
-           catch (NumberFormatException numberFormatException){
-               System.out.println("NumberFormatException");
+           catch (NumberFormatException | ArithmeticException e){
+               System.out.println(e);
            }
-
-
-        System.out.println(num / num1);
-
     }
 }
