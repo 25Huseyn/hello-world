@@ -1,8 +1,8 @@
-package az.atlacademy;
+package az.atlacademy.lesson14;
 
 import java.util.Scanner;
 
-public class lesson14 {
+public class App {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
@@ -19,4 +19,5 @@ public class lesson14 {
             }
         }
     }
+
 }
