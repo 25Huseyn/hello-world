@@ -13,9 +13,7 @@ public abstract class Pet {
         System.out.println("I am eating");
     }
 
-    public void respond() {
-        System.out.println("'Hello, owner. I am -" + nickname + ". I miss you!");
-    }
+    public abstract void respond();
 
     public void foul() {
         System.out.println("I need to cover it up");
@@ -66,9 +64,9 @@ public abstract class Pet {
         return "Pet{age=%d, species='%s', nickname='%s', tricklevel=%d, habits=%s}".formatted(age, species, nickname, tricklevel, Arrays.toString(habits));
     }
 
-    public Pet(int age, AnimalSpecies species, String nickname, int tricklevel, String[] habits) {
+    public Pet(int age, String species, String nickname, int tricklevel, String[] habits) {
         this.age = age;
-      //  this.species = species;
+        this.species = species;
         this.nickname = nickname;
         this.tricklevel = tricklevel;
         this.habits = habits;

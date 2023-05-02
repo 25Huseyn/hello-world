@@ -73,7 +73,9 @@ public class Human {
         this.iq = iq;
         this.schedule = schedule;
     }
-
+    public void greetpet(Pet pet){
+        System.out.println("Hello, " + pet.getNickname() + "!");
+    }
     @Override
     public String toString() {
         return "Human{name='%s', surname='%s', yaer=%d, iq=%d, schedule=%s}".formatted(name, surname, yaer, iq, Arrays.toString(schedule));

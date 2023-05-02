@@ -1,6 +1,9 @@
 package az.atlacademy.oop;
 
 public enum AnimalSpecies {
-CAT(),DOG(),TURTLE(),CARROT();
-
+    DOG,
+    CAT,
+    FISH,
+    ROBOTCAT,
+    UNKNOWN;
 }

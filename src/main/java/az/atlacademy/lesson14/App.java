@@ -1,5 +1,6 @@
 package az.atlacademy.lesson14;
 
+import java.time.ZonedDateTime;
 import java.util.Scanner;
 
 public class App {
@@ -18,6 +19,8 @@ public class App {
                 System.out.println("again");
             }
         }
+        ZonedDateTime now = ZonedDateTime.now();
+        System.out.println(now);
     }
 
 }
