@@ -62,11 +62,11 @@ public class Family {
         countFamily++;
 
     }
-    public boolean deleteChild(Human child){
-        if (){
+    //public boolean deleteChild(Human child){
+       // if (){
 
-        }
-    }
+       // }
+  //  }
 
     @Override
     public boolean equals(Object o) {
