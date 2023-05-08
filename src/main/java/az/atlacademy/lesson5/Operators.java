@@ -1,6 +1,6 @@
 package az.atlacademy.lesson5;
 
-public class operators {
+public class Operators {
     public static void main(String[] args) {
       int i=5;
       int b=4;

@@ -8,6 +8,8 @@ public class GenericApp {
         System.out.println(result);
         Result<String> result2 = validateAndGet("null");
         System.out.println(result2);
+        Respons<String,Integer> commonResponse = get("common",23);
+        System.out.println(commonResponse);
     }
     public static <T> Result<T> validateAndGet(T t){
     if (t == null){
@@ -20,3 +22,4 @@ public class GenericApp {
     }
 
 }
+

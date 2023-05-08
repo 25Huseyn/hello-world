@@ -1,6 +1,6 @@
 package az.atlacademy.lesson5;
 
-public class reloperation {
+public class RelOperation {
     public static void main(String[] args) {
         int a = 4;
         int b = 3;

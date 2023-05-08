@@ -13,5 +13,10 @@ public class ArrayApp {
         System.out.println(Arrays.toString(words));
         Arrays.sort(words);
         System.out.println(Arrays.toString(words));
+
+        String[] wordss = {"Altun","Tamer","Liquid","Kand","Geen"};
+        System.out.println(Arrays.toString(wordss));
+        Arrays.sort(wordss);
+        System.out.println(Arrays.toString(wordss));
     }
 }

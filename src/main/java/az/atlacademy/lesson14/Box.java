@@ -1,11 +1,11 @@
 package az.atlacademy.lesson14;
 
-public  class Generic<E> {
+public  class Box<E> {
     private  E num;
 
     private boolean isEven;
 
-    public Generic(E num, boolean isEven) {
+    public Box(E num, boolean isEven) {
         this.num = num;
         this.isEven = isEven;
     }
