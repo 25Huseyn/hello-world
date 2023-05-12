@@ -2,7 +2,7 @@ package az.atlacademy.lesson18_p2;
 
 import java.util.ArrayList;
 
-public class ArrayApp {
+public class ArrayListApp {
 
     public static void main(String[] args) {
         ArrayList<Integer> nums = new ArrayList<>();
@@ -23,6 +23,8 @@ public class ArrayApp {
         System.out.println(nums.hashCode());
         System.out.println(nums.remove(4));
         nums.clear();
+        System.out.println(nums);
+        nums.addAll(1,nums);
         System.out.println(nums);
     }
 }
