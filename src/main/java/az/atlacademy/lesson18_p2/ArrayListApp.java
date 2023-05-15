@@ -24,7 +24,7 @@ public class ArrayListApp {
         System.out.println(nums.remove(4));
         nums.clear();
         System.out.println(nums);
-        nums.addAll(1,nums);
+        nums.addAll(1, nums);
         System.out.println(nums);
     }
 }

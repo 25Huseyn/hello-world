@@ -1,5 +1,7 @@
 package az.atlacademy.lesson18_p2;
 
+import java.util.Optional;
+
 public class MyLinkedList<E> {
     public MyNode<E> head;
     public int size = 0;
@@ -32,10 +34,41 @@ public class MyLinkedList<E> {
         this.size = 0;
     }
 
-    public void findByIndex(int index) {
+    public Optional<E> findByIndex(int index) throws IndexOutOfBoundsException{
         if (index < 0 || index >= size) {
             throw new IndexOutOfBoundsException(index + "is wrong");
         }
+        int counter = 0;
+        MyNode<E> curr = head;
+        while (curr.next != null) {
+            if (index == ++counter) {
+                return Optional.of(curr.data);
+            }
+            curr = curr.next;
+        }
+        return Optional.empty();
+    }
+    public void deleteTail(E data){
+        if (head == null) {
+            head = new MyNode<>(data);
+            return;
+        }
+        MyNode<E> curr = head;
+        while (curr.next != null) {
+            curr = curr.next;
+        }
+        curr.next = new MyNode<>(data);
+            this.size--;
+    }
+    public void deleteHead(E data){
+        this.head = new MyNode<>(data, head);
+        this.size--;
+    }
+    public void deleteAtIndex(int index) throws IndexOutOfBoundsException{
+        if (index < 0 || index >= size) {
+            throw new IndexOutOfBoundsException(index + "is wrong");
+        }
+
     }
 
     @Override
