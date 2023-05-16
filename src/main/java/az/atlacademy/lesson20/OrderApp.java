@@ -8,15 +8,13 @@ public class OrderApp {
         Queue<Order> words = new LinkedList<>();
         makerOrder(words);
         System.out.println(words);
-        proccessOrder(words);
+        processOrder(words);
         System.out.println(words);
     }
-    public static void proccessOrder(Queue<Order> words) {
+    public static void processOrder(Queue<Order> words) {
         words.poll();
     }
     public static void makerOrder(Queue<Order> words) {
         words.add(new Order());
     }
-
-
 }
