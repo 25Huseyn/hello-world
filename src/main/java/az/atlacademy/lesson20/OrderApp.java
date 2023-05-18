@@ -1,20 +1,26 @@
 package az.atlacademy.lesson20;
 
 import java.util.LinkedList;
+import java.util.Optional;
 import java.util.Queue;
+import java.util.UUID;
 
 public class OrderApp {
+    private static final Queue<Order<String>> queue = new LinkedList<>();
     public static void main(String[] args) {
-        Queue<Order> words = new LinkedList<>();
-        makerOrder(words);
-        System.out.println(words);
-        processOrder(words);
-        System.out.println(words);
+
     }
-    public static void processOrder(Queue<Order> words) {
-        words.poll();
+    public static String makerOrder(){
+        final String id = UUID.randomUUID().toString();
+        queue.add(new Order<>(id));
+        return id;
     }
-    public static void makerOrder(Queue<Order> words) {
-        words.add(new Order());
+    public static Optional<String> processOrder(){
+        final Order<String> order = queue.peek();
+        if (order == null){
+            return Optional.empty();
+        }
+        queue.poll();
+        return Optional.of(order.getId());
     }
 }
