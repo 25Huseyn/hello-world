@@ -33,13 +33,11 @@ public class StreamApp {
         list.add("Java");
         list.add("Stream");
 
-        int sum = 0;
-        for (String s : list) {
-            if (s.length() >= 3) {
-                int length = s.length();
-                sum += length;
-            }
-        }
+
+        int sum = list.stream()
+                .filter((String str) -> str.length() >= 3)
+                .mapToInt(String::length)
+                .sum();
 
         System.out.println("Sum of sizes: " + sum);
     }
