@@ -3,7 +3,7 @@ package az.atlacademy.lesson20_p3;
 import java.util.List;
 import java.util.ArrayList;
 import java.util.stream.Stream;
-import java.util.stream.Stream;
+
 public class StreamApp {
     public static void main(String[] args) {
         List<String> listOfStrings = new ArrayList<>();
@@ -35,7 +35,7 @@ public class StreamApp {
 
 
         int sum = list.stream()
-                .filter((String str) -> str.length() >= 3)
+                .filter( str1 -> str1.length() >= 3)
                 .mapToInt(String::length)
                 .sum();
 
