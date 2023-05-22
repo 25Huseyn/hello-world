@@ -7,8 +7,8 @@ import java.util.stream.Stream;
 
 public class App {
     public static void main(String[] args) {
-        Stream<Integer> stream = (Stream<Integer>) new Random().ints(20);
+        /*Stream<Integer> stream = (Stream<Integer>) new Random().ints(20);
         List<Integer> findingEvens = stream.filter(i -> i % 2 == 0).collect(Collectors.toList());
-        System.out.println(findingEvens);
+        System.out.println(findingEvens);*/
     }
 }
