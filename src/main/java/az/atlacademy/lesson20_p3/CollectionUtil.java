@@ -16,6 +16,7 @@ public final class CollectionUtil {
     };
 
     public static final Function<List<Integer>, IntSummaryStatistics> COLLECTION_STATS_FUNC_V2 = nums -> {
-        nums.stream().mapToInt(Integer::intValue).summaryStatistics();
-    }
+        return nums.stream().mapToInt(Integer::intValue).summaryStatistics();
+    };
+
 }
