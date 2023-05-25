@@ -22,7 +22,7 @@ public class StreamApp {
         System.out.println(countMap.entrySet().stream()
                 .filter(entry -> entry.getValue() > 1)
                 .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue)));
-        System.out.println("Maximum Number: " + maxEntry.map(Map.Entry::getKey).orElse(null) + " "  + maxEntry.map(Map.Entry::getValue).orElse(0L));
+        System.out.println("Maximum Number: " + maxEntry.map(Map.Entry::getKey).orElse(null) + " " + "Count" + " " + maxEntry.map(Map.Entry::getValue).orElse(0L));
 
     }
 }
