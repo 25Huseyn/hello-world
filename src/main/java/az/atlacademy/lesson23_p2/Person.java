@@ -1,10 +1,14 @@
 package az.atlacademy.lesson23_p2;
 
 public class Person {
-     public final int id;
-    public final String name;
-    public final String surname;
-    public final double grade;
+    public  int id;
+    public  String name;
+    public  String surname;
+    public  double grade;
+
+    public Person() {
+
+    }
 
     public Person(int id, String name, String surname, double grade) {
         this.id = id;

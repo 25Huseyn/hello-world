@@ -1,31 +1,58 @@
 package az.atlacademy.lesson23_p2;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-import java.io.BufferedOutputStream;
-import java.io.FileOutputStream;
 import java.io.IOException;
-import java.io.ObjectOutputStream;
+import java.lang.reflect.Type;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 
 public class PersonApp {
     public static final String RESOURCE = "src/main/java/az/atlacademy/lesson23_p2/resource/";
+    public static final Path peopleFilePath = Paths.get(RESOURCE, "people.txt");
+
     public static void main(String[] args) {
-        Person huseyn = new Person(1,"Huseyn","Najafov",73.3);
+        // create object
+        final Person huseyn = new Person(1, "Huseyn", "Najafov", 73.3);
+        System.out.println(huseyn);
+
+        //serialize into Json data format
+        final ObjectMapper objectMapper = new ObjectMapper();
+        String huseynJson = "";
         try {
-            ObjectMapper objectMapper = new ObjectMapper();
-            String huseynJson = objectMapper.writeValueAsString(huseyn);
-            System.out.println(huseynJson);
+            huseynJson = objectMapper.writeValueAsString(huseyn);
         } catch (JsonProcessingException e) {
-            throw new RuntimeException(e);
+            e.printStackTrace();
+        }
+        System.out.println("huseynJson is:" + huseynJson);
+
+        // write into a file
+        try {
+            Files.writeString(peopleFilePath, huseynJson);
+        } catch (IOException e) {
+            e.printStackTrace();
         }
 
-        try (ObjectOutputStream oos = new ObjectOutputStream(
-                new BufferedOutputStream(new FileOutputStream(RESOURCE + "person.ser")))) {
-            byte[] bytes = new ObjectMapper().writeValueAsBytes(huseyn);
-            oos.writeObject(bytes);
+        // read from a file
+        String aPersonJson = "";
+        try {
+            aPersonJson = Files.readString(peopleFilePath);
+            System.out.println(aPersonJson);
         } catch (IOException e) {
-            throw new RuntimeException(e);
+            e.printStackTrace();
+        }
+
+        // deserialize into a objet
+        try {
+            Person person = objectMapper.readValue(aPersonJson, new TypeReference<Person>() {
+            });
+            System.out.println(aPersonJson);
+            System.out.println(person);
+        } catch (JsonProcessingException e) {
+            e.printStackTrace();
         }
     }
 }

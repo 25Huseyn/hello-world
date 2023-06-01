@@ -1,0 +1,1 @@
+{"id":1,"name":"Huseyn","surname":"Najafov","grade":73.3}

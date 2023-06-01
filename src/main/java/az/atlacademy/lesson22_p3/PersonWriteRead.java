@@ -16,6 +16,7 @@ public class PersonWriteRead {
             FileOutputStream fos = new FileOutputStream(studentsFile);
             BufferedOutputStream bos = new BufferedOutputStream(fos);
             ObjectOutputStream oos = new ObjectOutputStream(bos);
+
             oos.writeObject(person1);
             oos.writeObject(person2);
             oos.close();
