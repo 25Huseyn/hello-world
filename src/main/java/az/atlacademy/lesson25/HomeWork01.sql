@@ -60,9 +60,10 @@ VALUES('ORD001','2023-06-01',1000.00,'Completed',1),
 ('ORD002','2023-06-05',500.00,'Completed',2),
 ('ORD003','2023-06-10',750.00,'Pending',3);
 
-insert into Products(Name,Price, Category)
-Values('Product A',10.99,'Electronics'),
-('Product A',10.99,'Electronics');
+INSERT INTO Products (Name, Price, Category)
+VALUES ('Product A', 10.99, 'Electronics'),
+('Product B', 25.99, 'Home & Garden'),
+('Product C', 5.99, 'Books');
 
 insert into Sales (ProductId,Quantity,Price,Revenue)
 values(1,10,10.99,109.90),
