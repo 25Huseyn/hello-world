@@ -1,7 +1,0 @@
-
-SELECT * FROM Products
-ORDER BY LENGTH(ProductName) DESC
-LIMIT 1;
-
-
-
