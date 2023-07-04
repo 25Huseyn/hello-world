@@ -82,7 +82,7 @@ select * from Orders
 where Status = 'Completed';
 
 select Name,Price from Products
-where Category ='Electronics'
+where Category ='Electronics';
 
 select Revenue from Sales;
 
