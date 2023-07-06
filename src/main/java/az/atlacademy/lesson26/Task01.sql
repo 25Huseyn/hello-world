@@ -2,7 +2,7 @@ CREATE table Customers (
 customerId serial primary key,
 customerName varchar(20) NOT NULL,
 customerEmail varchar(50) UNIQUE,
-customrAge INTEGER  CHECK(CustomerAge => 18),
+customrAge INTEGER  CHECK(customerAge => 18),
 customerCity VARCHAR(35) DEFAULT 'Not İncluded';
 )
 CREATE INDEX Customers_customerEmail ON Customers(customerEmail);
