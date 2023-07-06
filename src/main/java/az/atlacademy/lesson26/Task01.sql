@@ -8,8 +8,6 @@ CustomerCity VARCHAR(35) DEFAULT 'Not İncluded';
 CREATE INDEX Customers_CustomerEmail ON Customers(CustomerEmail);
 
 INSERT INTO Customers (CustomerName,CustomerEmail , CustomrAge, CustomerCity,)
-VALUES ('John ', 'john@example.com', 30, 'New York');
-INSERT INTO Customers (CustomerName,CustomerEmail , CustomrAge, CustomerCity,)
-VALUES ('Jon ', 'jon@example.com', 20, 'New York');
-INSERT INTO Customers (CustomerName,CustomerEmail , CustomrAge, CustomerCity,)
-VALUES ('Don ', 'don@example.com', 26, '');
+VALUES ('John ', 'john@example.com', 30, 'New York'),
+('Jon ', 'jon@example.com', 20, 'New York'),
+('Don ', 'don@example.com', 26, '');
