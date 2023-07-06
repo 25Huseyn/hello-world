@@ -12,4 +12,4 @@ VALUES ('John ', 'john@example.com', 30, 'New York');
 INSERT INTO Customers (CustomerName,CustomerEmail , CustomrAge, CustomerCity,)
 VALUES ('Jon ', 'jon@example.com', 20, 'New York');
 INSERT INTO Customers (CustomerName,CustomerEmail , CustomrAge, CustomerCity,)
-VALUES ('Don ', 'don@example.com', 26, 'Los-Angelas');
+VALUES ('Don ', 'don@example.com', 26, '');
