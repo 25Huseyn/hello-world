@@ -5,7 +5,6 @@ import java.time.LocalDate;
 
 public class Person implements Serializable {
     public static final long serialVersionUID = 41;
-
     public final int id;
     public final String name;
     public final String surname;
