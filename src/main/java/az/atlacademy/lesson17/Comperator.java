@@ -4,7 +4,7 @@ import az.atlacademy.lesson16.Student;
 
 import java.util.Comparator;
 
-public class Comperator  implements Comparator<Person> {
+public class Comperator implements Comparator<Person> {
 
     @Override
     public int compare(Person p1, Person p2) {
