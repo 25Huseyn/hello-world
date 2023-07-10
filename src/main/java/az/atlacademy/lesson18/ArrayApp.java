@@ -17,6 +17,7 @@ public class ArrayApp {
             System.out.print(nums[i] + " - ");
         }
     }
+
     public static Optional<Integer> checkArray(int[] array, int num) {
         for (int i = 0; i < array.length; i++) {
             if (array[i] == num) {
