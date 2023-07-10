@@ -9,7 +9,7 @@ import java.util.stream.Collectors;
 public class StreamApp_2 {
     public static void main(String[] args) {
         Map<Integer, Long> numbers = new Random()
-                .ints(20,0,10)
+                .ints(20, 0, 10)
                 .boxed()
                 .collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
 
