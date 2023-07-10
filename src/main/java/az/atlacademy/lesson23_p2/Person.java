@@ -1,10 +1,10 @@
 package az.atlacademy.lesson23_p2;
 
 public class Person {
-    public  int id;
-    public  String name;
-    public  String surname;
-    public  double grade;
+    public int id;
+    public String name;
+    public String surname;
+    public double grade;
 
     public Person() {
 
