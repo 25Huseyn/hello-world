@@ -1,6 +1,6 @@
 package az.atlacademy.lesson24;
 
-public class Multi implements Runnable{
+public class Multi implements Runnable {
     public static void main(String[] args) {
         new Thread(new Multi()).start();
         new Thread(new Runnable() {
