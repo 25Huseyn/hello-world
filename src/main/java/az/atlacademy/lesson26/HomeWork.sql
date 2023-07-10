@@ -1,3 +1,4 @@
+
 CREATE TABLE Sales (
 ID SERIAL PRIMARY KEY,
 Product varchar(30),
@@ -41,22 +42,25 @@ INSERT INTO  Products(Name, Price) VALUES
 SELECT * FROM Products WHERE Price = (SELECT MAX(Price) FROM Products);
 SELECT * FROM Products WHERE Price = (SELECT MIN(Price) FROM Products);
 
+SELECT * FROM Products where price IN (MAX(Price),,MIN(Price) FROM Products);
+
 CREATE TABLE Students (
   ID serial PRIMARY KEY,
   Name varchar,
   Age int,
-  Gender varchar
+  Gender varchar,
+  avg_grade decimal(2,2)
 );
 CREATE TABLE Grades (
   StudentID int,
-  Course varchar,
-  Grade decimal
+  Grade decimal(2,2),
+  student_id int references Students(ID)
 );
-INSERT INTO Students (Name, Age, Gender) VALUES
- ('John', 18, 'Male'),
- ('Emma', 19, 'Female'),
- ('Michael', 20, 'Male'),
- ('Sophia', 18, 'Female');
+INSERT INTO Students (Name, Age, Gender,avg_grade) VALUES
+ ('John', 18, 'Male',80.12),
+ ('Emma', 19, 'Female',81.99),
+ ('Michael', 20, 'Male',60.60),
+ ('Sophia', 18, 'Female',90.50);
 INSERT INTO Grades (StudentID, Course, Grade) VALUES
  (1, 'Math', 85.5),
  (1, 'Science', 92.0),
@@ -66,3 +70,39 @@ INSERT INTO Grades (StudentID, Course, Grade) VALUES
  (3, 'Science', 82.0),
  (4, 'Math', 88.0),
  (4, 'Science', 94.5);
+  SELECT AVG(Grade) FROM Grades;
+  SELECT * from Grades where avg_grade > (SELECT AVG(Grade) FROM Grades) ;
+
+CREATE TABLE MaleStudents(
+ ID SERIAL PRIMARY KEY,
+ Name varchar(20),
+ Age int,
+ Grade DECIMAL(2,2)
+);
+CREATE TABLE FemaleStudents(
+ ID SERIAL PRIMARY KEY,
+ Name varchar(20),
+ Age int,
+ Grade DECIMAL(2,2)
+);
+
+INSERT MaleStudents(Name, Age, Grade) VALUES
+('Corc',18,61.22),
+('John',19,76.52),
+('Kobe',18,81.76);
+INSERT FemaleStudents(Name, Age, Grade) VALUES
+('Linda',18,61.22),
+('Kate',20,76.52),
+('Jane',19,81.76);
+
+SELECT Name FROM MaleStudents
+UNION
+SELECT Name FROM FemaleStudents;
+
+SELECT Name FROM MaleStudents
+INTERSECT,
+SELECT Name FROM FemaleStudents;
+
+SELECT Name FROM MaleStudents
+EXCEPT
+SELECT Name FROM FemaleStudents;
