@@ -7,6 +7,7 @@ import java.io.*;
 public class PersonWriteRead {
 
     public static final String RESOURCE = "src/main/java/az/atlacademy/lesson22_p3/resource/";
+
     public static void main(String[] args) {
         String studentsFile = RESOURCE + "persons.ser";
         Person person1 = new Person("John Smith", 30);
@@ -22,19 +23,20 @@ public class PersonWriteRead {
             oos.close();
             bos.close();
             fos.close();
-        }catch (IOException e ){
+        } catch (IOException e) {
             e.printStackTrace();
-        }try {
+        }
+        try {
             FileInputStream fis = new FileInputStream(studentsFile);
             BufferedInputStream bis = new BufferedInputStream(fis);
             ObjectInputStream ois = new ObjectInputStream(bis);
 
             Object object = ois.readObject();
-            if (object instanceof Student){
+            if (object instanceof Student) {
                 Student student = (Student) object;
                 System.out.println(student);
             }
-        }catch (IOException e){
+        } catch (IOException e) {
             e.printStackTrace();
         } catch (ClassNotFoundException e) {
             throw new RuntimeException(e);
