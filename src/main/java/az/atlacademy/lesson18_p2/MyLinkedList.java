@@ -34,7 +34,7 @@ public class MyLinkedList<E> {
         this.size = 0;
     }
 
-    public Optional<E> findByIndex(int index) throws IndexOutOfBoundsException{
+    public Optional<E> findByIndex(int index) throws IndexOutOfBoundsException {
         if (index < 0 || index >= size) {
             throw new IndexOutOfBoundsException(index + "is wrong");
         }
@@ -48,7 +48,8 @@ public class MyLinkedList<E> {
         }
         return Optional.empty();
     }
-    public void deleteTail(E data){
+
+    public void deleteTail(E data) {
         if (head == null) {
             head = new MyNode<>(data);
             return;
@@ -58,13 +59,15 @@ public class MyLinkedList<E> {
             curr = curr.next;
         }
         curr.next = new MyNode<>(data);
-            this.size--;
+        this.size--;
     }
-    public void deleteHead(E data){
+
+    public void deleteHead(E data) {
         this.head = new MyNode<>(data, head);
         this.size--;
     }
-    public void deleteAtIndex(int index) throws IndexOutOfBoundsException{
+
+    public void deleteAtIndex(int index) throws IndexOutOfBoundsException {
         if (index < 0 || index >= size) {
             throw new IndexOutOfBoundsException(index + "is wrong");
         }

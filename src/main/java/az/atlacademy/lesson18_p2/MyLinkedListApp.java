@@ -21,7 +21,7 @@ public class MyLinkedListApp {
         linkedList.findByIndex(3).ifPresent(System.out::println);
         linkedList.deleteTail(4);
         System.out.println(linkedList);
-            linkedList.clear();
+        linkedList.clear();
         System.out.println(linkedList.size);
         System.out.println(linkedList);
 
