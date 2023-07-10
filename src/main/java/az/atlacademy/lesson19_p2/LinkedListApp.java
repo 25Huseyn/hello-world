@@ -21,9 +21,5 @@ public class LinkedListApp {
         System.out.println(words);
         words.clear();
         System.out.println(words);
-
-
     }
-
-
 }
