@@ -7,7 +7,7 @@ public class PersonApp {
         Predicate<Person> check = new Predicate<Person>() {
             @Override
             public boolean test(Person person) {
-                if (person.getName().length() > 5){
+                if (person.getName().length() > 5) {
                     return true;
                 }
                 return false;
