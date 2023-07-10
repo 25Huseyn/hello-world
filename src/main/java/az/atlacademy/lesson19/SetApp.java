@@ -9,6 +9,7 @@ public class SetApp {
         nums.add(1);
         nums.add(23);
         nums.add(4);
+
         System.out.println(nums);
         System.out.println(nums.isEmpty());
         System.out.println(nums.remove(1));
