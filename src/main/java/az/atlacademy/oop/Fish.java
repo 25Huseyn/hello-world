@@ -1,6 +1,6 @@
 package az.atlacademy.oop;
 
-public class Fish extends Pet implements Foul{
+public class Fish extends Pet implements Foul {
     @Override
     public void respond() {
 

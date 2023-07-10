@@ -10,6 +10,7 @@ public class Family {
     private Human[] children;
     private Pet pet;
     private int countFamily;
+
     public Family(Human mother, Human father, Human[] children, Pet pet) {
         this.mother = mother;
         this.father = father;
@@ -58,15 +59,15 @@ public class Family {
         this.countFamily = countFamily;
     }
 
-    public void addChild(Human child){
+    public void addChild(Human child) {
         countFamily++;
 
     }
     //public boolean deleteChild(Human child){
-       // if (){
+    // if (){
 
-       // }
-  //  }
+    // }
+    //  }
 
     @Override
     public boolean equals(Object o) {

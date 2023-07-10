@@ -5,6 +5,7 @@ public class Woman extends Human implements MakeUp {
     public void greetpet(Pet pet) {
         super.greetpet(pet);
     }
+
     @Override
     public void makeUp() {
 

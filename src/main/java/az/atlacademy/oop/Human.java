@@ -10,6 +10,7 @@ public class Human {
     private int iq;
     private String[][] schedule;
     private Family family;
+
     public String getName() {
         return name;
     }
@@ -53,6 +54,7 @@ public class Human {
     public Human() {
 
     }
+
     public Human(String name, String surname, int yaer) {
         this.name = name;
         this.surname = surname;
@@ -73,9 +75,11 @@ public class Human {
         this.iq = iq;
         this.schedule = schedule;
     }
-    public void greetpet(Pet pet){
+
+    public void greetpet(Pet pet) {
         System.out.println("Hello, " + pet.getNickname() + "!");
     }
+
     @Override
     public String toString() {
         return "Human{name='%s', surname='%s', yaer=%d, iq=%d, schedule=%s}".formatted(name, surname, yaer, iq, Arrays.toString(schedule));
