@@ -100,7 +100,7 @@ UNION
 SELECT Name FROM FemaleStudents;
 
 SELECT Name FROM MaleStudents
-INTERSECT,
+INTERSECT
 SELECT Name FROM FemaleStudents;
 
 SELECT Name FROM MaleStudents
