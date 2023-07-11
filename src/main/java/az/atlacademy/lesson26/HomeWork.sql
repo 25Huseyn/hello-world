@@ -42,7 +42,7 @@ INSERT INTO  Products(Name, Price) VALUES
 SELECT * FROM Products WHERE Price = (SELECT MAX(Price) FROM Products);
 SELECT * FROM Products WHERE Price = (SELECT MIN(Price) FROM Products);
 
-SELECT * FROM Products where price IN (MAX(Price),,MIN(Price) FROM Products);
+SELECT * FROM Products where price IN (MAX(Price),MIN(Price) FROM Products);
 
 CREATE TABLE Students (
   ID serial PRIMARY KEY,
@@ -99,10 +99,10 @@ SELECT Name FROM MaleStudents
 UNION
 SELECT Name FROM FemaleStudents;
 
-SELECT Name FROM MaleStudents
+SELECT Grade FROM MaleStudents
 INTERSECT
-SELECT Name FROM FemaleStudents;
+SELECT Grade FROM FemaleStudents;
 
-SELECT Name FROM MaleStudents
+SELECT Age FROM MaleStudents
 EXCEPT
-SELECT Name FROM FemaleStudents;
+SELECT Age FROM FemaleStudents;
