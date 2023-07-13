@@ -71,7 +71,7 @@ INSERT INTO Grades (StudentID, Course, Grade) VALUES
  (4, 'Math', 88.0),
  (4, 'Science', 94.5);
   SELECT AVG(Grade) FROM Grades;
-  SELECT * from Grades where avg_grade > (SELECT AVG(Grade) FROM Grades) ;
+  SELECT * from Students where avg_grade > (SELECT AVG(Grade) FROM Grades) ;
 
 CREATE TABLE MaleStudents(
  ID SERIAL PRIMARY KEY,
