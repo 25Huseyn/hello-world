@@ -175,7 +175,7 @@ SET title            = 'Murder on the Orient Express',
     author           = 'Agatha Christie',
     publisher        = 'Collins Crime Club',
     number_of_copies = 10000;
-select * from books;
+
 --Query for deleting a book from the library
 delete
 from books
