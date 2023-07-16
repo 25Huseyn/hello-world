@@ -158,7 +158,7 @@ from books
 where number_of_copies = (select MAX(number_of_copies) from books);
 --Query for searching books read by a specific reader.
 select *
-from books
+from book
          join loan on books.id = loan.book_id
          join readers on loan.reader_id = readers.id
 where readers.id = 3;
