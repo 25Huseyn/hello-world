@@ -7,6 +7,8 @@ CREATE TABLE Products
     Description varchar(40),
     CategoryID  int REFERENCES Categories (CategoryID)
 );
+ALTER TABLE Products
+    ALTER COLUMN Price TYPE DECIMAL(7,2);
 
 CREATE TABLE Categories
 (
