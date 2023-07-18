@@ -134,3 +134,10 @@ VALUES ('Apple', 2100.99, 23, 'Phone', 4);
 DELETE
 FROM Products
 WHERE ProductID = 1;
+
+SELECT  FirstName, Name, OrderDetails.Quantity, Products.Price, OrderDetails.Quantity * Products.Price
+FROM Customers
+         JOIN Orders ON Customers.CustomerID = Orders.CustomerID
+         JOIN OrderDetails ON Orders.OrderaID = OrderDetails.OrderID
+         JOIN Products ON OrderDetails.ProductyID = Products.ProductID
+Where Customers.CustomerID =1;
