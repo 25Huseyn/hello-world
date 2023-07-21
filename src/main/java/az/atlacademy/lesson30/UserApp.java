@@ -15,6 +15,8 @@ public class UserApp {
         getAllUser().forEach(System.out::println);
         createUser(new User("Tom", "Tom@gmail.com", 214312321));
         getAllUser().forEach(System.out::println);
+        deleteUser("li");
+        getAllUser().forEach(System.out::println);
 
     }
 
