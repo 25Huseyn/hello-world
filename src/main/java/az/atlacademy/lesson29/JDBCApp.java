@@ -63,6 +63,7 @@ public class JDBCApp {
             query.setString(2, student.getPin());
             int affectedRows = query.executeUpdate();
             System.out.println(affectedRows);
+
         } catch (SQLException e) {
             e.printStackTrace();
         }

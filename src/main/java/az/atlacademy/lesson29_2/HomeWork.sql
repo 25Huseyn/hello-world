@@ -135,7 +135,7 @@ DELETE
 FROM Products
 WHERE ProductID = 1;
 
-SELECT  FirstName, Name, OrderDetails.Quantity, Products.Price, OrderDetails.Quantity * Products.Price
+SELECT  FirstName, Name, OrderDetails.Quantity, Products.Price, OrderDetails.Quantity * Products.Price as totalPrice
 FROM Customers
          JOIN Orders ON Customers.CustomerID = Orders.CustomerID
          JOIN OrderDetails ON Orders.OrderaID = OrderDetails.OrderID
