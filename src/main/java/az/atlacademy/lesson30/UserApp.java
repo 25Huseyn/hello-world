@@ -7,9 +7,9 @@ import java.util.List;
 
 public class UserApp {
 
-    private static final String getAllUsersSQL = "SELECT * FROM users;";
-    private static final String createUsersSQL = "INSERT INTO users(name,email,phone_number) VALUES (?,?,?)";
-    private static final String deleteUserSQL = "DELETE FROM users WHERE name = ?;";
+    private static final String GETALLUSERSSQL = "SELECT * FROM users;";
+    private static final String CREATEUSERSSQL = "INSERT INTO users(name,email,phone_number) VALUES (?,?,?)";
+    private static final String DELETEUSERSQL = "DELETE FROM users WHERE name = ?;";
 
     public static void main(String[] args) {
         getAllUser().forEach(System.out::println);
@@ -24,7 +24,7 @@ public class UserApp {
         try (Connection connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/lesson28db_homework",
                 "postgres",
                 "mysecretpassword")) {
-            PreparedStatement query = connection.prepareStatement(getAllUsersSQL);
+            PreparedStatement query = connection.prepareStatement(GETALLUSERSSQL);
             ResultSet resultSet = query.executeQuery();
             List<User> user = new ArrayList<>();
             while (resultSet.next()) {
@@ -45,7 +45,7 @@ public class UserApp {
         try (Connection connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/lesson28db_homework",
                 "postgres",
                 "mysecretpassword")) {
-            PreparedStatement query = connection.prepareStatement(createUsersSQL);
+            PreparedStatement query = connection.prepareStatement(CREATEUSERSSQL);
             query.setString(1, user.getName());
             query.setString(2, user.getEmail());
             query.setInt(3, user.getPhone_number());
@@ -61,7 +61,7 @@ public class UserApp {
                 .getConnection("jdbc:postgresql://localhost:5432/lesson28db_homework",
                         "postgres",
                         "mysecretpassword")) {
-            PreparedStatement query = connection.prepareStatement(deleteUserSQL);
+            PreparedStatement query = connection.prepareStatement(DELETEUSERSQL);
             query.setString(1,name);
             int affectedRows = query.executeUpdate();
             System.out.println(affectedRows);
