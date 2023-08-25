@@ -62,7 +62,7 @@ public class UserApp {
                         "postgres",
                         "mysecretpassword")) {
             PreparedStatement query = connection.prepareStatement(DELETEUSERSQL);
-            query.setString(1,name);
+            query.setString(1, name);
             int affectedRows = query.executeUpdate();
             System.out.println(affectedRows);
         } catch (SQLException e) {
