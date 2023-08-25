@@ -1,2 +1,3 @@
-SELECT Count(CustomerName) AS CustomerCount FROM Customers
+SELECT Count(CustomerName) AS CustomerCount
+FROM Customers
 WHERE Country = 'Germany';

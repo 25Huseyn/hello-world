@@ -1,2 +1,3 @@
-SELECT * FROM Products
+SELECT *
+FROM Products
 WHERE ProductName LIKE '%hot%';
