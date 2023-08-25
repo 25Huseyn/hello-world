@@ -19,8 +19,7 @@ public class JsonPersonApp {
         } catch (JsonProcessingException e) {
             throw new RuntimeException(e);
         }
-        try (ObjectOutputStream oos = new ObjectOutputStream(
-                new BufferedOutputStream(new FileOutputStream(RESOURCE + "person.ser")))) {
+        try (ObjectOutputStream oos = new ObjectOutputStream(new BufferedOutputStream(new FileOutputStream(RESOURCE + "person.ser")))) {
             byte[] bytes = new ObjectMapper().writeValueAsBytes(huseyn);
             oos.writeObject(bytes);
         } catch (IOException e) {
