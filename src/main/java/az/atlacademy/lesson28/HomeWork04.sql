@@ -23,7 +23,8 @@ create table readers
     phone_number varchar(10)
 );
 alter table readers
-    alter column phone_number type numeric(10, 0) using cast(phone_number as numeric);
+alter
+column phone_number type numeric(10, 0) using cast(phone_number as numeric);
 
 insert into readers(first_name, last_name, adress, email, phone_number)
 values ('John', 'Doe', '123 Main St', 'johndoe@example.com', '1234567890'),
