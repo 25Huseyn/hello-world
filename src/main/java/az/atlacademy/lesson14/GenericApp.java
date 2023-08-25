@@ -19,17 +19,20 @@ public final class GenericApp {
         System.out.println(resultGeneric2.isEven());
         System.out.println(resultGeneric2);
     }
-    public static Box<Integer> getnumInteger(){
+
+    public static Box<Integer> getnumInteger() {
         int num = (int) (Math.random() * 101);
-       boolean isEven = num % 2 ==0;
-       return new Box<>(num, isEven);
+        boolean isEven = num % 2 == 0;
+        return new Box<>(num, isEven);
     }
-    public static Box<Double> getNumDouble(){
-    double num = (double) (Math.random()* 101);
-    boolean isEven = num % 2 ==0;
-    return new Box<>(num,isEven);
+
+    public static Box<Double> getNumDouble() {
+        double num = (double) (Math.random() * 101);
+        boolean isEven = num % 2 == 0;
+        return new Box<>(num, isEven);
     }
-    public static Box<String> getNumString(){
-        return new Box<>(UUID.randomUUID().toString(),true);
+
+    public static Box<String> getNumString() {
+        return new Box<>(UUID.randomUUID().toString(), true);
     }
 }

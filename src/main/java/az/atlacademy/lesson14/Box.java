@@ -1,7 +1,7 @@
 package az.atlacademy.lesson14;
 
-public  class Box<E> {
-    private  E num;
+public class Box<E> {
+    private E num;
 
     private boolean isEven;
 
