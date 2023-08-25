@@ -1,4 +1,5 @@
 package az.atlacademy.lesson29;
+
 import java.util.Objects;
 
 public class Student {
@@ -13,6 +14,7 @@ public class Student {
         this.name = name;
         this.pin = pin;
     }
+
     public Student(int id, String name, String pin) {
         this.id = id;
         this.name = name;
