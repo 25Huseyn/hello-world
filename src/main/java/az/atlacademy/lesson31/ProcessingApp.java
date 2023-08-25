@@ -5,7 +5,7 @@ import az.atlacademy.lesson30.User;
 
 import java.sql.*;
 
-public class Processing {
+public class ProcessingApp {
     private static final String CALL_QUERY_FOR_PROCEDURE = "call my_simple_procedure()";
     private static final String QUERY_FOR_ALL_USERS_BY_ID = "select * from users WHERE id = ?;";
     private static final String QUERY_FOR_CREATING_USER = "insert into users(name,email,phone_number) values(?,?,?);";
@@ -14,7 +14,7 @@ public class Processing {
 
 
     public static void main(String[] args) {
-        var process = new Processing();
+        var process = new ProcessingApp();
         process.run_2();
         run_3(new User("Alex", "Alex@gmail.com", 123456789));
         run_4();
