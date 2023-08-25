@@ -1,6 +1,6 @@
 package az.atlacademy.lesson17_p2;
 
-public class Worker implements Comparable<Worker>{
+public class Worker implements Comparable<Worker> {
     private String name;
     private String duty;
     private int id;
@@ -62,6 +62,6 @@ public class Worker implements Comparable<Worker>{
 
     @Override
     public int compareTo(Worker that) {
-        return Integer.compare(that.getAge(),this.getAge());
+        return Integer.compare(that.getAge(), this.getAge());
     }
 }
