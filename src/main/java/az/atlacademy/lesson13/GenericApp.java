@@ -7,7 +7,8 @@ public class GenericApp {
         String name = " ";
         System.out.println(isEmpty(name));
     }
-    public static Optional<String> isEmpty(String names){
-        return  (names == null || names.isEmpty()) ?  Optional.empty() : Optional.of(names);
+
+    public static Optional<String> isEmpty(String names) {
+        return (names == null || names.isEmpty()) ? Optional.empty() : Optional.of(names);
     }
 }
