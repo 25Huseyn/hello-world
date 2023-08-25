@@ -1,8 +1,9 @@
 package az.atlacademy.lesson11;
 
 public enum User {
-    Deleted(3),Block(6),Inuse(5);
+    Deleted(3), Block(6), Inuse(5);
     private final int usercount;
+
     User(int usercount) {
         this.usercount = usercount;
     }
