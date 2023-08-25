@@ -26,7 +26,6 @@ public class Main {
             double Price = resultSet.getDouble("Price");
             int Quantity = resultSet.getInt("Quantity");
             double totalPrice = resultSet.getDouble("totalPrice");
-
             System.out.println("");
         }
         resultSet.next();
