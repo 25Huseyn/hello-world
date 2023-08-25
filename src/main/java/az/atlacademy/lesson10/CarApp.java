@@ -4,7 +4,7 @@ import az.atlacademy.lesson9.Rectangle;
 
 public class CarApp {
     public static void main(String[] args) {
-       Bmw bmw = new Bmw();
+        Bmw bmw = new Bmw();
         Mercedes mercedes = new Mercedes();
 
         call(mercedes);
@@ -18,6 +18,7 @@ public class CarApp {
         System.out.println(bmwx6 instanceof Car);
         System.out.println(bmwx6 instanceof Object);
     }
+
     private static void call(Car car) {
         car.print();
     }
