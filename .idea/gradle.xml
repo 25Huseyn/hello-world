@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/SpringLesson05" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/SpringLesson05" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/SpringLesson06" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/SpringLesson06" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/SpringLesson07" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/SpringLesson07" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/Springlesson04" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/Springlesson04" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/spring" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/spring" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/spring-boot-jdbc-example" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/spring-boot-jdbc-example" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/spring-product-management-app" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/spring-product-management-app" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>
