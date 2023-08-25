@@ -1,4 +1,5 @@
-create database exam;
+create
+database exam;
 --1ci sual
 create table workers
 (
