@@ -3,10 +3,13 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Jdbc/Jdbc.iml" filepath="$PROJECT_DIR$/Jdbc/Jdbc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/SpringLesson05.main.iml" filepath="$PROJECT_DIR$/.idea/modules/SpringLesson05.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/SpringLesson06.main.iml" filepath="$PROJECT_DIR$/.idea/modules/SpringLesson06.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/SpringLesson07.main.iml" filepath="$PROJECT_DIR$/.idea/modules/SpringLesson07.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/SpringLesson3.main.iml" filepath="$PROJECT_DIR$/.idea/modules/SpringLesson3.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Springlesson04.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Springlesson04.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/spring-boot-jdbc-example.main.iml" filepath="$PROJECT_DIR$/.idea/modules/spring-boot-jdbc-example.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/spring-product-management-app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/spring-product-management-app.main.iml" />
     </modules>
   </component>
 </project>
