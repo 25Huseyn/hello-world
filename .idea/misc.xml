@@ -5,11 +5,12 @@
     <file type="web" url="file://$PROJECT_DIR$/Spring" />
     <file type="web" url="file://$PROJECT_DIR$/spring-boot-jdbc-example" />
     <file type="web" url="file://$PROJECT_DIR$/spring-product-management-app" />
+    <file type="web" url="file://$PROJECT_DIR$/spring-relations" />
     <file type="web" url="file://$PROJECT_DIR$/SpringLesson03" />
-    <file type="web" url="file://$PROJECT_DIR$/Springlesson04" />
-    <file type="web" url="file://$PROJECT_DIR$/SpringLesson05" />
-    <file type="web" url="file://$PROJECT_DIR$/SpringLesson06" />
-    <file type="web" url="file://$PROJECT_DIR$/SpringLesson07" />
+    <file type="web" url="file://$PROJECT_DIR$/springlesson04" />
+    <file type="web" url="file://$PROJECT_DIR$/springLesson05" />
+    <file type="web" url="file://$PROJECT_DIR$/springLesson06" />
+    <file type="web" url="file://$PROJECT_DIR$/springLesson07" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">

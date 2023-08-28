@@ -7,7 +7,7 @@
         <option name="externalProjectPath" value="$PROJECT_DIR$/SpringLesson05" />
         <option name="modules">
           <set>
-            <option value="$PROJECT_DIR$/SpringLesson05" />
+            <option value="$PROJECT_DIR$/springLesson05" />
           </set>
         </option>
       </GradleProjectSettings>
@@ -15,7 +15,7 @@
         <option name="externalProjectPath" value="$PROJECT_DIR$/SpringLesson06" />
         <option name="modules">
           <set>
-            <option value="$PROJECT_DIR$/SpringLesson06" />
+            <option value="$PROJECT_DIR$/springLesson06" />
           </set>
         </option>
       </GradleProjectSettings>
@@ -23,7 +23,7 @@
         <option name="externalProjectPath" value="$PROJECT_DIR$/SpringLesson07" />
         <option name="modules">
           <set>
-            <option value="$PROJECT_DIR$/SpringLesson07" />
+            <option value="$PROJECT_DIR$/springLesson07" />
           </set>
         </option>
       </GradleProjectSettings>
@@ -31,7 +31,7 @@
         <option name="externalProjectPath" value="$PROJECT_DIR$/Springlesson04" />
         <option name="modules">
           <set>
-            <option value="$PROJECT_DIR$/Springlesson04" />
+            <option value="$PROJECT_DIR$/springlesson04" />
           </set>
         </option>
       </GradleProjectSettings>
@@ -56,6 +56,14 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/spring-product-management-app" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/spring-relations" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/spring-relations" />
           </set>
         </option>
       </GradleProjectSettings>

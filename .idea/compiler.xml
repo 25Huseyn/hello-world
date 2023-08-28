@@ -14,14 +14,18 @@
         <processorPath useClasspath="false">
           <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.projectlombok/lombok/1.18.28/a2ff5da8bcd8b1b26f36b806ced63213362c6dcc/lombok-1.18.28.jar" />
         </processorPath>
-        <module name="spring-product-management-app.main" />
+        <module name="spring-relations.main" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="com.example.SpringLesson3.main" target="17" />
-      <module name="Spring" target="17" />
       <module name="spring" target="17" />
+      <module name="Spring" target="17" />
       <module name="SpringLesson03" target="17" />
+      <module name="springlesson04" target="17" />
+      <module name="springLesson05" target="17" />
+      <module name="springLesson06" target="17" />
+      <module name="springLesson07" target="17" />
       <module name="SpringLesson3.test" target="17" />
     </bytecodeTargetLevel>
   </component>
