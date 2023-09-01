@@ -23,17 +23,13 @@
       <module name="com.example.SpringLesson3.main" target="17" />
       <module name="spring" target="17" />
       <module name="Spring" target="17" />
-      <module name="spring-boot-jdbc-example.test" target="17" />
       <module name="spring-product-management-app.test" target="17" />
       <module name="spring-relations.test" target="17" />
       <module name="SpringLesson03" target="17" />
       <module name="springlesson04" target="17" />
-      <module name="Springlesson04.test" target="17" />
       <module name="springLesson05" target="17" />
-      <module name="SpringLesson05.test" target="17" />
       <module name="springLesson06" target="17" />
       <module name="springLesson07" target="17" />
-      <module name="SpringLesson07.test" target="17" />
       <module name="SpringLesson3.test" target="17" />
     </bytecodeTargetLevel>
   </component>
